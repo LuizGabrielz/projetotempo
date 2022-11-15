@@ -4,42 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tarefas</title>
     <link rel="stylesheet" href="index.css"></link>
-    <img src="img/image.png">
- 
+    <script defer src="/index.js"></script>    
+
 </head>   
 <body>
+    <header><img src="img/image.png"></header> 
 
     <section class="container">
-  
+        
+        
+        
         <form class="form" method="get">
             <label for="input-teste-1">Usuário</label>
             <input type="text" id="usuario">
             
             <label for="input-teste-2">Atividade</label>
-            <input type="text" id="Atividade">
+            <input type="text" id="atividade">
 
             <label for="input-teste-3">Tipo De Atividade</label>
-            <input type="text" id="tipodeatividade">
+            <input type="text" id="tipoatividade">
 
+            <p class="relogio">00:00:00</p>
+            
         </form>
 
-        <p class="relogio">00:00:00</p>
+        <section class="container">
             <p>
                 <button class="iniciar btn-green">iniciar</button>
                 <button class="pausar btn-yellow">pausar</button>
-                <button class="zerar btn-red">zerar</button>
-            </p>  
- 
-        <script src="/index.js"></script>
-     
+                <button class="finalizar btn-red">finalizar</button>
+            </p>   
         </div>
-        
-     
-    </section>
+           
+                 
+        </Section>
 
-    <section class="container">
+        </section>
+    </div>
+        </div>
+         
+    </section>
+            <section class="container">
         <table borde="2" id="tabela">
 
             <thead>
@@ -54,8 +61,12 @@
                     <th>Tempo</th>
                 </tr>
             </thead>
+            <tbody class="teste">
+
+            </tbody>
         </table>
         </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         
         
