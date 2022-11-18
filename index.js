@@ -50,7 +50,8 @@ $(function(){
         tabelaatividade.push({
             usuario: usuario.value,
             atividade: atividade.value,
-            tipoatividade: tipoatividade.value
+            tipoatividade: tipoatividade.value,
+            relogio: relogio.innerHTML
     
         });
 
@@ -60,6 +61,25 @@ $(function(){
             <td>${usuario.value}</td>
             <td>${atividade.value}</td>
             <td>${tipoatividade.value}</td>
+            <td>${relogio.innerHTML}</td>
             </tr> `
     });
 })
+
+function Ordenar() {
+    var arrayOrdenado = array.sort()
+
+    const tbody = document.querySelector(".teste");
+
+    for (var i = 0; i < arrayOrdenado.length; i++) {
+
+    };
+
+var row = tbody.insertRow(0);
+    row.innerHTML = `
+    <tr>
+    <td>${usuario}</td>
+    <td>${atividade}</td>
+    <td>${tipoatividade}</td>
+    <td>${relogio}</td>`
+}
