@@ -32,6 +32,7 @@ pausar.addEventListener('click', function(event) {
 });
 
 finalizar.addEventListener('click', function(event) {
+    
   
 });
 
@@ -66,20 +67,3 @@ $(function(){
     });
 })
 
-function Ordenar() {
-    var arrayOrdenado = array.sort()
-
-    const tbody = document.querySelector(".teste");
-
-    for (var i = 0; i < arrayOrdenado.length; i++) {
-
-    };
-
-var row = tbody.insertRow(0);
-    row.innerHTML = `
-    <tr>
-    <td>${usuario}</td>
-    <td>${atividade}</td>
-    <td>${tipoatividade}</td>
-    <td>${relogio}</td>`
-}
